@@ -1,5 +1,5 @@
 {
-  "name": "form-test",
+  "name": "form",
   "version": "1.0.0",
   "description": "simple form",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=development webpack serve --mode development",
     "stop": "node server.stop.js"
   },
-  "author": "gesse666",
+  "author": "Nikolay",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.7",
@@ -45,7 +45,6 @@
   "dependencies": {
     "choices.js": "^9.0.1",
     "focus-visible": "^5.2.0",
-    "normalize.css": "^8.0.1",
-    "swiper": "^6.5.4"
+    "normalize.css": "^8.0.1"
   }
 }
