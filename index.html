@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FTL: Прямая машина</title>
+</head>
+ <body>
+  <body>
+    <section class="page">
+      <form class="form container">
+        <h1 class="form__title">FTL: Прямая машина</h1>
+        <div class="form-item">
+          <h2 class="form-item__title">Маршрут</h2>
+            <p class="form-item__description">Откуда</p>
+            <textarea class="form-item__text"></textarea>
+            <p class="form-item__description">Куда</p>
+            <textarea class="form-item__text"></textarea>
+          </div>
+        <div class="form-item">
+          <h2 class="form-item__title">Транспорт</h2>
+          <div class="select-group"> 
+            <div class="select-group__item">
+              <p class="form-item__description">Грузоподъёмность</p>
+              <select class="multi-default">
+                <option value="">Не выбрана</option>
+                <option value="Вариант 1">Вариант 1</option>
+                <option value="Вариант 2">Вариант 2</option>
+                <option value="Вариант 3">Вариант 3</option>
+                <option value="Вариант 4">Вариант 4</option>
+                <option value="Вариант 5">Вариант 5</option>
+                <option value="Вариант 6">Вариант 6</option>
+              </select>
+            </div>
+            <div class="select-group__item">
+              <p class="form-item__description">Способ погрузки</p>
+              <select class="multi-default">
+                <option value="">Не выбран</option>
+                <option value="Вариант 1">Вариант 1</option>
+                <option value="Вариант 2">Вариант 2</option>
+                <option value="Вариант 3">Вариант 3</option>
+                <option value="Вариант 4">Вариант 4</option>
+                <option value="Вариант 5">Вариант 5</option>
+                <option value="Вариант 6">Вариант 6</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-item">
+          <h2 class="form-item__title">Груз</h2>
+          <p class="form-item__description">Тип груза</p>
+          <div class="long">
+            <select class="multi-default">
+              <option value="">Не выбран</option>
+              <option value="Вариант 1">Вариант 1</option>
+              <option value="Вариант 2">Вариант 2</option>
+              <option value="Вариант 3">Вариант 3</option>
+              <option value="Вариант 4">Вариант 4</option>
+              <option value="Вариант 5">Вариант 5</option>
+              <option value="Вариант 6">Вариант 6</option>
+            </select>
+          </div>
+          <div class="select-group"> 
+            <div class="select-group__item">
+              <p class="form-item__description">Класс опасности</p>
+              <select class="multi-default">
+                <option value="">Не выбран</option>
+                <option value="Вариант 1">Вариант 1</option>
+                <option value="Вариант 2">Вариант 2</option>
+                <option value="Вариант 3">Вариант 3</option>
+                <option value="Вариант 4">Вариант 4</option>
+                <option value="Вариант 5">Вариант 5</option>
+                <option value="Вариант 6">Вариант 6</option>
+              </select>
+            </div>
+            <div class="select-group__item">
+              <p class="form-item__description">Объявленная ценность, ₽</p>
+              <textarea class="form-item__text form-item__text--short" placeholder="≥ 1"></textarea>
+            </div>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <span class="checkmark"></span>
+            <p class="form-item__description form-item__description--checkbox">Требуется температурный режим</p>
+            <div class="select-group hidden">
+              <div class="select-group__item">
+                <p class="form-item__description">От, °C</p>
+                <textarea class="form-item__text form-item__text--short"></textarea>
+              </div>
+              <div class="select-group__item">
+                <p class="form-item__description">До, °C</p>
+                <textarea class="form-item__text form-item__text--short"></textarea>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="form-item">
+          <h2 class="form-item__title">Время</h2>
+          <div class="form-item__description-group">
+            <span class="form-item__description">Когда прибыть на точку</span>
+            <span class="form-item__description">700 км в день</span>
+          </div>
+          <div class="address">
+            <input class="address__text" type="text" placeholder="Адрес не указан">
+            <button class="address__btn">НЕ ВЫБРАНО</button>
+          </div>
+          <div class="address address--disabled">
+            <input class="address__text" type="text" placeholder="Адрес не указан">
+            <button class="address__btn address__btn--disabled">НЕ ВЫБРАНО</button>
+          </div>
+          <p class="form-item__description form-item__description--disabled">Комментарий к заказу</p>
+          <textarea class="form-item__comment" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+        </div>
+      </form>
+      <aside class="form__info">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</aside>
+    </section>
+</body>
+</html>
